@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="그림과 실습으로 배우는 Kubernetes와 AWS EKS. K8s Design Lab에서 클러스터 기초부터 스케줄링, Gateway API, 옵저빌리티까지 학습하세요.">
+<meta name="theme-color" content="#152820">
+<title>K8s Design Lab · 그림과 실습으로 배우는 Kubernetes와 AWS EKS</title>
+<link rel="icon" href="kube-signal.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script defer src="course.js"></script>
+<script defer src="details.js"></script>
+<script defer src="quiz.js"></script>
+<script defer src="illustrations.js"></script>
+<script defer src="visuals.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/learn/cluster/1" aria-label="K8s Design Lab 홈"><img class="logo" src="kube-signal.svg" width="42" height="42" alt=""><span class="brand-lockup"><span>K8s <span class="brand-accent">Design</span> Lab</span><span class="brand-tagline">그림과 실습으로 배우는 Kubernetes와 AWS EKS</span></span></a>
+  <nav class="tabs" aria-label="주 메뉴"><button data-mode="learn"><span>◫</span> 학습</button><button data-mode="lab"><span>⌬</span> 실습</button><button data-mode="quiz"><span>◈</span> 퀴즈</button><button data-mode="ref"><span>☷</span> 치트시트</button></nav>
+  <div class="top-actions"><button id="search" class="search"><span>⌕</span><span class="search-label">강의 검색</span><kbd>Ctrl K</kbd></button><button id="theme" class="icon-btn" aria-label="테마 변경">☾</button><button id="menu" class="icon-btn" aria-label="강의 목차" aria-expanded="false">☰</button></div>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><div class="side-title"><span>커리큘럼</span><span id="lessonCount"></span></div><nav id="outline" aria-label="강의 목차"></nav><div class="progress"><div><span>학습 진도</span><strong id="progressText"></strong></div><div class="progress-track"><div id="progressFill"></div></div></div></aside>
+  <main id="main" tabindex="-1"></main>
+</div>
+<dialog id="searchDialog"><div class="dialog-head"><label for="query">강의 검색</label><button id="closeSearch" class="icon-btn" aria-label="검색 닫기">×</button></div><input id="query" type="search" placeholder="HPA, Envoy, Pod Identity…" autocomplete="off"><div id="results"></div></dialog>
+<noscript>학습 다이어그램을 보려면 JavaScript를 활성화하세요.</noscript>
+</body>
+</html>
